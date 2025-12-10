@@ -21,7 +21,7 @@
         </nav>
     </header>
     <main>
-        <section data-view="home" class="view--home">
+        <section data-view="home" class="view view--active">
             <div class="hero">
                 <div class="hero-content">
                     <p class="hero__eyebrow"></p>
@@ -37,15 +37,15 @@
                 <div class="hero__graphic"></div>
             </div>
         </section>
-        <section data-view="about">this is about</section>
-        <section data-view="portfolio" class="view view--portfolio">
+        <section data-view="about" class="view view--hidden">this is about</section>
+        <section data-view="portfolio" class="view view--hidden">
             <div class="portfolio-inner">
                 <h2>My Projects</h2>
                 <p>A selection of my frontend development work from Noroff</p>
                 <div class="project-grid" data-project-grid> </div>
             </div>
         </section>
-        <section data-view="contact"></section>
+        <section data-view="contact" class="view view--hidden"></section>
     </main>
     <footer> </footer>
     <script type="module" src="./js/main.js"></script>

@@ -3,6 +3,8 @@ import { renderProjectCards } from "./render/renderProjects.js";
 const views = document.querySelectorAll("[data-view]");
 const DEFAULT_VIEW = "home";
 
+const navLinks = document.querySelectorAll("nav a[href^='#']");
+
 /**
  *
  *  @returns {string} The current route based on the URL hash.
@@ -27,8 +29,10 @@ function showView(name) {
 
     if (viewName === name) {
       view.classList.remove("view--hidden");
+      view.classList.add("view--active");
     } else {
       view.classList.add("view--hidden");
+      view.classList.remove("view--active");
     }
   });
 }
