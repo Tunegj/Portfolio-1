@@ -1,3 +1,5 @@
+import { renderProjectCards } from "./render/renderProjects.js";
+
 const views = document.querySelectorAll("[data-view]");
 const DEFAULT_VIEW = "home";
 
@@ -37,6 +39,10 @@ function showView(name) {
 function handleRouteChange() {
   const route = getCurrentRoute();
   showView(route);
+
+  if (route === "portfolio") {
+    renderProjectCards();
+  }
 }
 
 export function initRouter() {
