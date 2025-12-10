@@ -1,0 +1,60 @@
+.hero__title span {
+  color: var(--color-accent);
+}
+
+.btn--primary {
+  background: linear-gradient(
+    135deg,
+    var(--color-accent),
+    var(--color-accent-light)
+  );
+  color: #0f172a;
+  box-shadow: 0 10px 30px rgb(65, 103, 136 / 35%);
+}
+
+.btn--primary:hover {
+  box-shadow: 0 14px 40px rgb(65, 103, 136 / 45%);
+}
+
+.btn--secondary {
+  background-color: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-accent);
+}
+
+.btn--secondary:hover {
+  background-color: var(--color-surface);
+}
+
+.hero__graphic {
+  border-radius: 24px;
+  background: radial-gradient(
+      circle at top left,
+      var(--color-accent-light),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      var(--color-accent-dark),
+      transparent 55%
+    ),
+    linear-gradient(135deg, var(--color-surface), var(--color-bg));
+
+  box-shadow: 0 24px 60px rgb(15, 23, 42 / 90%), 0 0 0 1px var(--color-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__graphic::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgb(255, 255, 255 /10%) 1px,
+    transparent 0
+  );
+  background-size: 14px 14px;
+  opacity: 0.2;
+  mix-blend-mode: overlay;
+}

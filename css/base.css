@@ -1,3 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
 .view--hidden {
   display: none;
+}
+
+:root {
+  --color-accent: #416788;
+  --color-accent-light: #6d8fa8;
+  --color-accent-dark: #2c4c66;
+
+  --color-bg: #0f172a;
+  --color-surface: #162133;
+
+  --color-text: #e5e7eb;
+  --color-text-muted: #9ca3af;
+
+  --color-border: rgb(255, 255, 255 / 10%);
+  --color-shadow: rgb(0, 0, 0 / 50%);
 }
