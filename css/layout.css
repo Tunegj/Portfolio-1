@@ -58,3 +58,29 @@
   max-width: 320px;
   height: 220px;
 }
+
+¨/* Portfolio Section Styles */
+.view--portfolio {
+  padding: 4rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-inner {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .portfolio-inner {
+    padding: 0 1rem;
+  }
+}
