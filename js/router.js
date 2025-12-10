@@ -37,6 +37,18 @@ function showView(name) {
   });
 }
 
+function setActiveNav(route) {
+  navLinks.forEach((link) => {
+    const target = link.getAttribute("href").replace("#", "");
+
+    if (target === route) {
+      link.classList.add("nav__link--active");
+    } else {
+      link.classList.remove("nav__link--active");
+    }
+  });
+}
+
 /**
  * Handle route changes by showing the appropriate view.
  */
@@ -47,6 +59,8 @@ function handleRouteChange() {
   if (route === "portfolio") {
     renderProjectCards();
   }
+
+  setActiveNav(route);
 }
 
 export function initRouter() {
