@@ -1,5 +1,42 @@
+.hero__eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+}
+
 .hero__title span {
   color: var(--color-accent);
+}
+
+.hero__title {
+  margin: 0 0 1rem;
+  font-weight: 700;
+  line-height: 1.1;
+  font-size: clamp(2.2rem, 1.6rem + 1.5vw, 3.2rem);
+}
+
+.hero__subtitle {
+  margin: 0 0 2rem;
+  max-width: 40ch;
+  color: var(--color-text-muted);
+  font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
 }
 
 .btn--primary {
@@ -9,11 +46,11 @@
     var(--color-accent-light)
   );
   color: #0f172a;
-  box-shadow: 0 10px 30px rgb(65, 103, 136 / 35%);
+  box-shadow: 0 10px 30px rgb(65 103 136 / 35%);
 }
 
 .btn--primary:hover {
-  box-shadow: 0 14px 40px rgb(65, 103, 136 / 45%);
+  box-shadow: 0 14px 40px rgb(65 103 136 / 45%);
 }
 
 .btn--secondary {
@@ -40,7 +77,7 @@
     ),
     linear-gradient(135deg, var(--color-surface), var(--color-bg));
 
-  box-shadow: 0 24px 60px rgb(15, 23, 42 / 90%), 0 0 0 1px var(--color-border);
+  box-shadow: 0 24px 60px rgb(15 23 42 / 90%), 0 0 0 1px var(--color-border);
   position: relative;
   overflow: hidden;
 }
@@ -51,7 +88,7 @@
   inset: 0;
   background-image: radial-gradient(
     circle at 1px 1px,
-    rgb(255, 255, 255 /10%) 1px,
+    rgb(255 255 255 /10%) 1px,
     transparent 0
   );
   background-size: 14px 14px;

@@ -1,0 +1,60 @@
+.view--home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1.5rem;
+}
+
+.nav-bar {
+  padding: 1rem 1.5rem;
+}
+
+.nav-bar a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-right: 1rem;
+  transition: color 0.2s;
+}
+
+.nav-bar a:hover {
+  color: var(--color-accent-light);
+}
+
+.hero {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero__content {
+    order: 1;
+  }
+
+  .hero__graphic {
+    order: 0;
+    max-width: 280px;
+    height: 220px;
+  }
+
+  .hero__buttons {
+    justify-content: center;
+  }
+}
+
+.hero__graphic {
+  flex: 1;
+  max-width: 320px;
+  height: 220px;
+}
