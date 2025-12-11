@@ -1,4 +1,14 @@
 /* Hero Section */
+.hero {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
 .hero__eyebrow {
   font-size: 0.8rem;
   letter-spacing: 0.18em;
@@ -42,6 +52,9 @@
   box-shadow: 0 24px 60px rgb(15 23 42 / 90%), 0 0 0 1px var(--color-border);
   position: relative;
   overflow: hidden;
+  flex: 1;
+  max-width: 320px;
+  height: 220px;
 }
 
 .hero__graphic::before {
@@ -56,6 +69,29 @@
   background-size: 14px 14px;
   opacity: 0.2;
   mix-blend-mode: overlay;
+}
+
+/* Hero Mobile Styles */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero__content {
+    order: 1;
+  }
+
+  .hero__graphic {
+    order: 0;
+    max-width: 280px;
+    height: 220px;
+  }
+
+  .hero__buttons {
+    justify-content: center;
+  }
 }
 
 /* Button Styles */
@@ -97,8 +133,13 @@
 }
 
 .btn--secondary:hover {
+  background: linear-gradient(
+    135deg,
+    var(--color-accent),
+    var(--color-accent-light)
+  );
   color: #0f172a;
-  background-color: var(--color-accent-light);
+  box-shadow: 0 14px 40px rgb(65 103 136 / 45%);
 }
 
 /* Project cards - portfolio section */

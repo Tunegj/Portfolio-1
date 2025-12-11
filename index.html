@@ -24,7 +24,7 @@
         <section data-view="home" class="view view--active">
             <div class="hero">
                 <div class="hero-content">
-                    <p class="hero__eyebrow"></p>
+                    <p class="hero__eyebrow">Home</p>
                     <h1 class="hero__title">Hi, I'm <span>Tone Gjerde</span></h1>
                     <p class="hero__subtitle">Aspiring frontend developer with a passion for creating polished,
                         responsive web experiences.</p>
@@ -37,7 +37,71 @@
                 <div class="hero__graphic"></div>
             </div>
         </section>
-        <section data-view="about" class="view view--hidden">this is about</section>
+        <section data-view="about" class="view view--hidden" aria-labelledby="about-heading">
+            <div class="about">
+                <header class="about__header">
+                    <p class="eyebrow">About</p>
+                    <h2 id="about-heading" class="about__title">
+                        Frontend developer based in Berge, Norway
+                    </h2>
+                    <p class="about__intro">
+                        I'm Tone, a frontend developer who enjoys building clea, accessible interfaces with HTML, CSS
+                        and JavaScript. I like structure, readibility and crafting small, thoughtful interactions that
+                        make a UI feel calm and intuitive. My goal is always to write code that not just works, but code
+                        I can explain.
+                    </p>
+                </header>
+                <div class="about__body">
+                    <section class="about__main">
+                        <p>I'm currently completing the Frontend Development program at Noroff, where I've worked with
+                            API integrations, SPA architecture, and modular JavaScript. Throughout my projects I've
+                            focued on maintable CSS, responsive layouts, clean UI architecture and accessibility - all
+                            the parts of frontend that quietly make everything better.</p>
+
+                        <p>I am now looking for a junior frontend developer position where I can contribute to real
+                            products, grow alongside an experienced team, and continue developing my skills in
+                            user-focused frontend work.</p>
+
+                        <p>My mental age is somewhere between 13 and 80 - when I am not coding I am eiter gaming or
+                            knitting. After many years in hospitality, I am transitioning into tech with a strong
+                            foundation in communication, patience, and calm problem-solving abilities. I bring that
+                            service-minded approach into my work as a developer, especially when crafting user-focused
+                            interfaces.</p>
+                    </section>
+                    <aside class="about__sidebar">
+                        <section class="about-card">
+                            <h3 class="about-card__title">Currently</h3>
+                            <ul class="about-card__list">
+                                <li>Completing Frontend Development at Noroff</li>
+                                <li>Building webpages with HTML, CSS and JavaScript</li>
+                                <li>Focused on accessibility + UI architecture</li>
+                                <li>Open to junior frontend developer roles</li>
+                            </ul>
+                        </section>
+                        <section class="about-card">
+                            <h3 class="about-card__title">Core skills</h3>
+                            <div class="skill-list">
+                                <span class="skill-pill">HTML5</span>
+                                <span class="skill-pill">CSS3</span>
+                                <span class="skill-pill">JavaScript</span>
+                                <span class="skill-pill">REST APIs</span>
+                                <span class="skill-pill">Git + GitHub</span>
+                            </div>
+                        </section>
+                        <section class="about-card">
+                            <h3 class="about-card__title">Practices I value</h3>
+                            <div class="skill-list">
+                                <span class="skill-pill">Semantic HTML</span>
+                                <span class="skill-pill">Accessibility</span>
+                                <span class="skill-pill">Maintainable CSS</span>
+                                <span class="skill-pill">Clear structure</span>
+                                <span class="skill-pill">Code I understand</span>
+                            </div>
+                        </section>
+                    </aside>
+                </div>
+            </div>
+        </section>
         <section data-view="portfolio" class="view view--hidden">
             <div class="portfolio-inner">
                 <h2>My Projects</h2>
