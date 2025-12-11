@@ -1,3 +1,12 @@
+.eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+  opacity: 0.8;
+}
+
 /* Hero Section */
 .hero {
   width: 100%;
@@ -7,14 +16,6 @@
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
-}
-
-.hero__eyebrow {
-  font-size: 0.8rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--color-text-muted);
-  margin-bottom: 0.75rem;
 }
 
 .hero__title span {
@@ -205,4 +206,56 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+}
+
+.about__title {
+  font-size: clamp(1.8rem, 2.2vw, 2.25rem);
+  line-height: 1.2;
+  margin-top: 0.75rem;
+}
+
+.about__intro {
+  margin-top: 0.75rem;
+  max-width: 38rem;
+}
+
+.about-card {
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: rgb(255 255 255 /5%);
+  border: 1px solid var(--color-border);
+  backdrop-filter: blur(8px);
+}
+
+.about-card__title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.about-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-card__list li + li {
+  margin-top: 0.25rem;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.skill-pill {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  border: 1px solid var(--color-border);
+  background-color: rgb(255 255 255 / 8%);
 }

@@ -1,3 +1,6 @@
+/* Layout Styles */
+
+/* View Container Styles */
 .view {
   min-height: calc(100vh - 80px);
   padding: 4rem 1.5rem;
@@ -22,6 +25,7 @@
   }
 }
 
+/* Home Section Styles */
 .view--home {
   display: flex;
   justify-content: center;
@@ -50,6 +54,37 @@
 @media (max-width: 768px) {
   .portfolio-inner {
     padding: 0 1rem;
+  }
+}
+
+/* About Section Styles */
+.about {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.about__header {
+  margin-bottom: 2.5rem;
+}
+
+.about__body {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.about__main {
+  flex: 2;
+}
+
+.about__sidebar {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .about__body {
+    flex-direction: column;
   }
 }
 
