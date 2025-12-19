@@ -26,7 +26,10 @@ Each project includes a brief description, thumbnail image, Github repository li
 
 ### Installing:
 
-1. Clone the repository: `git clone https://github.com/Tunegj/Portfolio-1.git`
+1. Clone the repository:
+```git bash
+`git clone https://github.com/Tunegj/Portfolio-1.git`
+```
 
 ### Running the Project:
 
