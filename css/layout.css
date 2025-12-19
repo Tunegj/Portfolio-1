@@ -80,6 +80,7 @@
 
 .about__sidebar {
   flex: 1;
+  gap: 1rem;
 }
 
 @media (max-width: 768px) {
